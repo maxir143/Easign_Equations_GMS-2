@@ -34,7 +34,7 @@
             "Key": "03fa4758-97dc-4b8f-ab5d-26c0a963559d",
             "Value": {
                 "id": "c6190f10-1c51-4727-9c19-288f89957969",
-                "resourcePath": "objects\\oEasing\\oEasing.yy",
+                "resourcePath": "objects\\oTween_1\\oTween_1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -68,6 +68,14 @@
                 "id": "fdb23cb5-a36d-47f3-a01e-b3e3b9d5b2c5",
                 "resourcePath": "views\\37b5f7c0-040c-4eb3-82c5-6d247d73ea81.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "436d1db9-27bb-4746-8a01-a0cec01c5329",
+            "Value": {
+                "id": "011de49d-5ed9-43bf-867c-8325b226b347",
+                "resourcePath": "objects\\oTween_2\\oTween_2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -108,6 +116,14 @@
                 "id": "1b8f23d5-c496-4b81-809d-1dd0ddee2843",
                 "resourcePath": "fonts\\fntEasing\\fntEasing.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "77816803-3d6e-4a4d-9753-c32acfa2df5b",
+            "Value": {
+                "id": "eb8aeb52-403a-42ff-ac92-6944a43afae0",
+                "resourcePath": "rooms\\room_1\\room_1.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -244,6 +260,14 @@
                 "id": "631940c0-2bdb-4994-970c-8899b200b813",
                 "resourcePath": "scripts\\Tween_Step\\Tween_Step.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dd03d54d-cdbd-4167-bcba-b30e47acff5a",
+            "Value": {
+                "id": "cf7e81c0-62f2-48f9-83b7-f2a5da3152ba",
+                "resourcePath": "timelines\\tlTween\\tlTween.yy",
+                "resourceType": "GMTimeline"
             }
         },
         {

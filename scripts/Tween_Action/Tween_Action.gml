@@ -1,4 +1,4 @@
-///Tween_Action(Action)
+///Tween_Action(Id,Action)
 var Id	= argument0;
 var Action = argument1;
 

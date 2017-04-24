@@ -10,9 +10,9 @@ Tween_Init(Id, Attribute, StartValue, EndValue, Time(s), TweenType, State)
 
 Tween_Step() *just one per object
 
-Tween_Action(State)
+Tween_Action(Id,State)
 
-	Tween_Id		= real
+	Id			= Tween_Id
 	Attribute		= Attribute to edit as a string
 	StartValue	= Attribute start value
 	EndValue		= Attribute End value
