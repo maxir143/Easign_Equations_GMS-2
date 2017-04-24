@@ -12,8 +12,3 @@ Tween[Id,6]	= 0			//StartTime
 if Tween[Id,5] = "reverse"{
 	Tween[Id,6] = Tween[Id,3] * room_speed
 }
-
-/*
-	Code Created by : http://mlab.me
-	Code Reference	 : http://gizma.com/easing
-*/

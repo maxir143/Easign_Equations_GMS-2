@@ -166,12 +166,7 @@ switch Type {
 		}
 	break;
 //------------------------------------------------------------------		
-	/*
-
-
-	*/
 }
-
 Tween[i,6] = t
 variable_instance_set(self,value,Result)
 }

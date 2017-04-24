@@ -1,0 +1,4 @@
+/*
+	Code Created by : http://mlab.me
+	Code Reference	 : http://gizma.com/easing
+*/

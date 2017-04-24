@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "cc078850-b3a0-47aa-b1f7-bd6ccb532e5e",
+            "Value": {
+                "id": "0280b7ac-28a0-44c9-a78b-31132af8b25a",
+                "resourcePath": "notes\\Faq.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "33d89291-3e01-4a35-b6db-45ebb058a7c6",
