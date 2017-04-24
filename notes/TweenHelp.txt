@@ -5,6 +5,7 @@
 
 The extension is simple to use, init as many tweens as you need, then activate or deactivate
 whenever you want.
+*to make custom long animation see -> oTween_2
 
 Tween_Init(Id, Attribute, StartValue, EndValue, Time(s), TweenType, State)
 
