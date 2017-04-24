@@ -199,10 +199,18 @@
             }
         },
         {
+            "Key": "c7c40feb-f193-4847-8f92-0ccdabafac5d",
+            "Value": {
+                "id": "ab3b608b-b627-41b5-b41f-c513e0d3ceee",
+                "resourcePath": "views\\c7c40feb-f193-4847-8f92-0ccdabafac5d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "cc078850-b3a0-47aa-b1f7-bd6ccb532e5e",
             "Value": {
                 "id": "0280b7ac-28a0-44c9-a78b-31132af8b25a",
-                "resourcePath": "notes\\Faq.yy",
+                "resourcePath": "notes\\TweenHelp.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -227,14 +235,6 @@
             "Value": {
                 "id": "7d5ad563-9d1a-4cae-a41b-81c4b78fecd0",
                 "resourcePath": "views\\d185ec1e-69e0-4a69-a9bf-a988c747b752.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "d207067c-ceff-41b4-a61e-702a8c5a884b",
-            "Value": {
-                "id": "d51573e5-5375-42b4-abf3-c8d907e531ce",
-                "resourcePath": "views\\d207067c-ceff-41b4-a61e-702a8c5a884b.yy",
                 "resourceType": "GMFolder"
             }
         },
