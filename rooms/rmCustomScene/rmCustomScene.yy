@@ -2,7 +2,7 @@
     "id": "77816803-3d6e-4a4d-9753-c32acfa2df5b",
     "modelName": "GMRoom",
     "mvc": "1.0",
-    "name": "room_1",
+    "name": "rmCustomScene",
     "IsDnD": false,
     "creationCodeFile": "",
     "inheritCode": false,
@@ -45,7 +45,7 @@
                     "m_serialiseFrozen": false,
                     "name": "inst_37005E8D",
                     "x": 512,
-                    "y": 352,
+                    "y": 32,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -114,8 +114,8 @@
         "id": "7372bba7-1adb-4295-94fa-18e9c3fb26ba",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 768,
-        "Width": 1024,
+        "Height": 500,
+        "Width": 1000,
         "inheritRoomSettings": false,
         "persistent": false
     },
