@@ -169,5 +169,8 @@ switch Type {
 //------------------------------------------------------------------		
 }
 Tween[i,6] = t
+if (t == Tween[i,3] * room_speed) or (t == 0){
+	Tween[i,5]	= "stop"		
+}
 variable_instance_set(self,value,Result)
 }
