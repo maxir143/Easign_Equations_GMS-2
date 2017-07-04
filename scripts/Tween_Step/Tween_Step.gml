@@ -1,14 +1,39 @@
+// @desc 
 ///Tween_Step()
+Id			= argument0
+Tween[Id,0]	= 	
+Tween[Id,1]	= 
+Tween[Id,2]	= 	
+Tween[Id,3]	= 
+Tween[Id,4]	= 
+Tween[Id,5]	= argument6	//State
+Tween[Id,6]	= 0	
+Tween[Id,7]	= "end" 
+
+switch Tween[Id,5]{	//StartTime
+	case "play":
+	case "start":
+	case "stop":
+		Tween[Id,6] = 0
+	break;
+	case "reverse":
+	case "end":
+		Tween[Id,6] = Tween[Id,3] * room_speed
+	break;
+}
 //Ease values
 for(var i = 0; i < array_height_2d(Tween); i ++){
 var b,c,d,t,State,Type,value;
-b		= Tween[i,1]				//start value 
-c		= Tween[i,2] - Tween[i,1]	//change in value 
-d		= Tween[i,3] * room_speed	//duration 
+value	= argument1 //Attribute
+b		= argument2	//StartValue
+c		= argument3 - argument2	//change in value  // argument2 EndValue
+d		= argument4 * room_speed //Time 
+Type	= argument5	//Type
+State	= argument6	//State
 t		= Tween[i,6]				//current time	
-State	= Tween[i,5]
-Type		= Tween[i,4]
-value	= Tween[i,0]
+
+
+
 //tween Action
 // or (t == 0)
 switch State{
