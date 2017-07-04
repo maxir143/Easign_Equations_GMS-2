@@ -10,17 +10,32 @@ State	= Tween[i,5]
 Type		= Tween[i,4]
 value	= Tween[i,0]
 //tween Action
+// or (t == 0)
 switch State{
 	case "play":
-		if t >= d {State = "stop"; break}
 		t ++
 	break;
 	case	"reverse":
-		if t <= 0 {State = "stop"; break}
 		t --
 	break;
-	case "stop":	
+	case "stop":
+	case "start":
+		if (Tween[i,6] != 0) {
+			Tween[i,6] = 0
+		}
+	case "end":	
+		if (Tween[i,6] != Tween[i,3] * room_speed) {
+			Tween[i,6] = Tween[i,3] * room_speed
+		}
 	break;
+}
+if (t >= Tween[i,3] * room_speed){
+	Tween[i,5]	= "end"	
+	Tween[i,6]	= 0	
+}
+if (t <= 0) {
+	Tween[i,5]	= "start"	
+	Tween[i,6] = Tween[i,3] * room_speed	
 }
 //Tween Easing
 var x1 = t;
@@ -135,12 +150,12 @@ switch Type {
 //------------------------------------------------------------------	
 	case "CircIn":
 		x1 /= d
-		Result = -c * (sqrt(1 - x1*x1) - 1) + b
+		Result = -c * (sqrt(abs(1 - x1*x1)) - 1) + b
 	break;
 	case "CircOut":
 		x1 /= d
 		x1 --
-		Result = c * sqrt(1 - x1*x1) + b
+		Result = c * sqrt(abs(1 - x1*x1)) + b
 	break;
 	case "CircInOut":
 		x1 /= d/2
@@ -168,9 +183,17 @@ switch Type {
 	break;
 //------------------------------------------------------------------		
 }
-Tween[i,6] = t
-if (t == Tween[i,3] * room_speed) or (t == 0){
-	Tween[i,5]	= "stop"		
+
+if (t >= Tween[i,3] * room_speed){
+	Tween[i,5]	= Tween[i,7]		
+	Tween[i,6]	= Tween[i,3] * room_speed
+	exit;
 }
+if (t <= 0) {
+	Tween[i,5]	= "start"	
+	Tween[i,6]	= 0	
+	exit;
+}
+Tween[i,6] = t
 variable_instance_set(self,value,Result)
 }

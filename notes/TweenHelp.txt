@@ -1,40 +1,36 @@
 /*
-	Code Created by : http://mlab.me
+	Code Created by : @maxir143
 	Code Reference	 : http://gizma.com/easing
 */
 
 The extension is simple to use, init as many tweens as you need, then activate or deactivate
 whenever you want.
-*to make custom long animation see -> oTween_2
 
-Tween_Init(Id, Attribute, StartValue, EndValue, Time(s), TweenType, State)
+Tween_Init(Id, Attribute, StartValue, EndValue, Time(in seconds), TweenType, State)
 
 Tween_Step() *just one per object
 
 Tween_Action(Id,State)
-
-	Id			= Tween_Id
+	Id				= Tween_Id
 	Attribute		= Attribute to edit as a string
-	StartValue	= Attribute start value
+	StartValue		= Attribute start value
 	EndValue		= Attribute End value
 	Time			= Time in seconds
 	TweenType		= *See the tween list below
-	State		= **State to start 
+	State			= **State to start 
 	
 	
-	*Tween List =[
+	* Tween List = [
 	"Linear"
-	"QuadIn"	 || "QuadOut"	 || "QuadInOut"
-	"CubicIn"  || "CubicOut"  || "CubicInOut"
-	"QrtIn"	 || "QrtOut"	 || "QrtInOut"
-	"QntIn"	 || "QntOut"	 || "QntInOut"
-	"SinIn"	 || "SinOut"	 || "SinInOut"
-	"ExpoIn"	 || "ExpoOut"	 || "ExpoInOut"
-	"CircIn"	 || "CircOut"	 || "CircInOut"
-	"BounceIn" || "BounceOut" || "BounceInOut"
+	"QuadIn"	|| "QuadOut"	|| "QuadInOut"
+	"CubicIn"	|| "CubicOut"	|| "CubicInOut"
+	"QrtIn"		|| "QrtOut"		|| "QrtInOut"
+	"QntIn"		|| "QntOut"		|| "QntInOut"
+	"SinIn"		|| "SinOut"		|| "SinInOut"
+	"ExpoIn"	|| "ExpoOut"	|| "ExpoInOut"
+	"CircIn"	|| "CircOut"	|| "CircInOut"
+	"BounceIn"	|| "BounceOut"	|| "BounceInOut"
 	]
 	
-	**State List =[
-		"play" || "reverse" || "stop"
-	]
+	** State List =[ "play" || "reverse" || "stop" ]
 

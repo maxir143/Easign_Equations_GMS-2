@@ -7,8 +7,17 @@ Tween[Id,2]	= argument3	//EndValue
 Tween[Id,3]	= argument4	//Time
 Tween[Id,4]	= argument5	//Type
 Tween[Id,5]	= argument6	//State
-Tween[Id,6]	= 0			//StartTime
+Tween[Id,6]	= 0	
+Tween[Id,7]	= "end" 
 
-if Tween[Id,5] = "reverse"{
-	Tween[Id,6] = Tween[Id,3] * room_speed
+switch Tween[Id,5]{	//StartTime
+	case "play":
+	case "start":
+	case "stop":
+		Tween[Id,6] = 0
+	break;
+	case	"reverse":
+	case "end":
+		Tween[Id,6] = Tween[Id,3] * room_speed
+	break;
 }
