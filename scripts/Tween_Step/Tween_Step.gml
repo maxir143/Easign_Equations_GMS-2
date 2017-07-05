@@ -1,43 +1,34 @@
-// @desc 
-///Tween_Step()
-Id			= argument0
-Tween[Id,0]	= 	
-Tween[Id,1]	= 
-Tween[Id,2]	= 	
-Tween[Id,3]	= 
-Tween[Id,4]	= 
-Tween[Id,5]	= argument6	//State
-Tween[Id,6]	= 0	
-Tween[Id,7]	= "end" 
+/// @desc Tween an object variable
+/// @arg ID
+/// @arg Variable
+/// @arg StartValue
+/// @arg EndValue
+/// @arg Time
+/// @arg Type
+/// @arg State 
 
-switch Tween[Id,5]{	//StartTime
+//Ease values
+
+switch State {	//StartTime
 	case "play":
+		State = "playing"
+		t = 0 
+	break;
 	case "start":
 	case "stop":
-		Tween[Id,6] = 0
+		t = 0
 	break;
 	case "reverse":
 	case "end":
-		Tween[Id,6] = Tween[Id,3] * room_speed
+		t = d
+	break;
+	case "playing":
 	break;
 }
-//Ease values
-for(var i = 0; i < array_height_2d(Tween); i ++){
-var b,c,d,t,State,Type,value;
-value	= argument1 //Attribute
-b		= argument2	//StartValue
-c		= argument3 - argument2	//change in value  // argument2 EndValue
-d		= argument4 * room_speed //Time 
-Type	= argument5	//Type
-State	= argument6	//State
-t		= Tween[i,6]				//current time	
-
-
 
 //tween Action
-// or (t == 0)
 switch State{
-	case "play":
+	case "playing":
 		t ++
 	break;
 	case	"reverse":
@@ -45,22 +36,22 @@ switch State{
 	break;
 	case "stop":
 	case "start":
-		if (Tween[i,6] != 0) {
-			Tween[i,6] = 0
+		if (t != 0) {
+			t = 0
 		}
 	case "end":	
-		if (Tween[i,6] != Tween[i,3] * room_speed) {
-			Tween[i,6] = Tween[i,3] * room_speed
+		if (t != d) {
+			t = d
 		}
 	break;
 }
-if (t >= Tween[i,3] * room_speed){
-	Tween[i,5]	= "end"	
-	Tween[i,6]	= 0	
+if (t >= d){
+	State	= "end"	
+	t	= 0	
 }
 if (t <= 0) {
-	Tween[i,5]	= "start"	
-	Tween[i,6] = Tween[i,3] * room_speed	
+	State	= "start"	
+	t = d
 }
 //Tween Easing
 var x1 = t;
@@ -207,18 +198,17 @@ switch Type {
 		}
 	break;
 //------------------------------------------------------------------		
-}
 
-if (t >= Tween[i,3] * room_speed){
-	Tween[i,5]	= Tween[i,7]		
-	Tween[i,6]	= Tween[i,3] * room_speed
-	exit;
+//if (t >= d){
+//	State	= 	"end"		
+//	t	= d
+//	exit;
+//}
+//if (t <= 0) {
+//	State	= "start"	
+//	t	= 0	
+//	exit;
+//}
+////Tween[i,6] = t
 }
-if (t <= 0) {
-	Tween[i,5]	= "start"	
-	Tween[i,6]	= 0	
-	exit;
-}
-Tween[i,6] = t
-variable_instance_set(self,value,Result)
-}
+variable_instance_set(argument0,value,Result)
