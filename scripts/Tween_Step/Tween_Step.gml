@@ -7,52 +7,25 @@
 /// @arg Type
 /// @arg State 
 
-//Ease values
-
-switch State {	//StartTime
-	case "play":
-		State = "playing"
-		t = 0 
-	break;
-	case "start":
-	case "stop":
-		t = 0
-	break;
-	case "reverse":
-	case "end":
-		t = d
-	break;
-	case "playing":
-	break;
-}
-
 //tween Action
 switch State{
-	case "playing":
+	case "play":
 		t ++
+		if (t >= d){
+			State	= "end"	
+			t	= d
+		}
 	break;
 	case	"reverse":
 		t --
-	break;
-	case "stop":
-	case "start":
-		if (t != 0) {
+		if (t <= 0) {
+			State	= "start"	
 			t = 0
 		}
-	case "end":	
-		if (t != d) {
-			t = d
-		}
 	break;
 }
-if (t >= d){
-	State	= "end"	
-	t	= 0	
-}
-if (t <= 0) {
-	State	= "start"	
-	t = d
-}
+
+
 //Tween Easing
 var x1 = t;
 switch Type {
@@ -199,16 +172,9 @@ switch Type {
 	break;
 //------------------------------------------------------------------		
 
-//if (t >= d){
-//	State	= 	"end"		
-//	t	= d
-//	exit;
-//}
-//if (t <= 0) {
-//	State	= "start"	
-//	t	= 0	
-//	exit;
-//}
-////Tween[i,6] = t
 }
-variable_instance_set(argument0,value,Result)
+if argument[0] {
+	variable_instance_set(id,value,round(Result))
+}else{
+	variable_instance_set(id,value,Result)
+}

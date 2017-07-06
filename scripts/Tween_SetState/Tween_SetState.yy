@@ -1,8 +1,8 @@
 {
-    "id": "9f144ea9-f806-4c40-9d12-4c2183a03484",
+    "id": "2d144a49-a73c-41bd-a011-e5bbd1e0550a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Tween_Action",
+    "name": "Tween_SetState",
     "IsCompatibility": false,
     "IsDnD": false
 }

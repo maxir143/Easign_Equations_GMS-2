@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "2d144a49-a73c-41bd-a011-e5bbd1e0550a",
+            "Value": {
+                "id": "66bb6723-0cdc-41ea-9ef0-86db5dceb0c0",
+                "resourcePath": "scripts\\Tween_SetState\\Tween_SetState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2ec444ac-8fdb-495b-ba9f-50d453c9be2f",
             "Value": {
                 "id": "5e6611b8-1b30-42e4-9602-496653101b0f",
@@ -87,19 +95,19 @@
             }
         },
         {
+            "Key": "63df2799-f56c-4e89-a3e9-75021a23a24a",
+            "Value": {
+                "id": "90e980fa-c767-4dce-bdf3-f98773caeab9",
+                "resourcePath": "scripts\\Tween_GetState\\Tween_GetState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "69acf478-c258-41d3-8dcc-a0cab4b31801",
             "Value": {
                 "id": "95997dd1-d0b7-4257-9755-52fd0ff0499b",
                 "resourcePath": "views\\69acf478-c258-41d3-8dcc-a0cab4b31801.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "767a3b5b-ee13-41a1-b866-f66a472bdf34",
-            "Value": {
-                "id": "64222a8f-ea55-42db-bbc4-505e0e1bcb4e",
-                "resourcePath": "scripts\\Tween_EndAction\\Tween_EndAction.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -116,14 +124,6 @@
                 "id": "95015007-5114-4778-932e-04b62989065a",
                 "resourcePath": "views\\799c1c5d-aaa9-4f35-9304-bdd1f76f3e0e.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "83719652-2505-45a4-866c-d4d2c938253f",
-            "Value": {
-                "id": "1249e3d6-f2ce-4678-b2a5-3033c37069b6",
-                "resourcePath": "scripts\\Tween_Get_State\\Tween_Get_State.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -146,7 +146,7 @@
             "Key": "8bcdd93b-9c99-43ec-980e-eebc9bf1aec8",
             "Value": {
                 "id": "894416f0-5cfb-4bf9-8871-2ae543b19f0b",
-                "resourcePath": "scripts\\Tween_Init\\Tween_Init.yy",
+                "resourcePath": "scripts\\Tween_Set\\Tween_Set.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -156,14 +156,6 @@
                 "id": "9ac42f85-a17c-4dfd-8138-bc7850d6f192",
                 "resourcePath": "sprites\\sprite0\\sprite0.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "9f144ea9-f806-4c40-9d12-4c2183a03484",
-            "Value": {
-                "id": "c10d39b6-6c5a-4aa3-a3e9-b87a244c0a39",
-                "resourcePath": "scripts\\Tween_Action\\Tween_Action.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -274,10 +266,9 @@
     "script_order": [
         "8bcdd93b-9c99-43ec-980e-eebc9bf1aec8",
         "dbfbfe3a-e90b-402c-95ee-f0b5cb168507",
-        "9f144ea9-f806-4c40-9d12-4c2183a03484",
-        "83719652-2505-45a4-866c-d4d2c938253f",
-        "767a3b5b-ee13-41a1-b866-f66a472bdf34",
-        "0968d93c-f571-4426-8abc-e89e1c13b9ce"
+        "0968d93c-f571-4426-8abc-e89e1c13b9ce",
+        "63df2799-f56c-4e89-a3e9-75021a23a24a",
+        "2d144a49-a73c-41bd-a011-e5bbd1e0550a"
     ],
     "tutorial": ""
 }

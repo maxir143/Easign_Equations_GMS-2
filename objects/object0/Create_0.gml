@@ -1,1 +1,1 @@
-Tween_Init(0,"x",xstart,xstart + 300 , 3,"ExpoIn", "reverse")
+Tween_Set("x",xstart,xstart + 300 , 3,"ExpoInOut", "start")

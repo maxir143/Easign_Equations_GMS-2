@@ -1,8 +1,8 @@
 {
-    "id": "83719652-2505-45a4-866c-d4d2c938253f",
+    "id": "8bcdd93b-9c99-43ec-980e-eebc9bf1aec8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Tween_Get_State",
+    "name": "Tween_Set",
     "IsCompatibility": false,
     "IsDnD": false
 }
