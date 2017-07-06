@@ -1,1 +1,1 @@
-Tween_Set("x",xstart,xstart + 300 , 3,"ExpoInOut", "start")
+Tween_Set("image_angle",0,360, 3,"ExpoInOut", "start")
