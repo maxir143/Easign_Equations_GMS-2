@@ -18,8 +18,8 @@
             "modelName": "GMRInstanceLayer",
             "mvc": "1.0",
             "depth": 0,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 50,
+            "grid_y": 50,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -44,8 +44,8 @@
                     "m_originalParentID": "00000000-0000-0000-0000-000000000000",
                     "m_serialiseFrozen": false,
                     "name": "inst_3DA83523",
-                    "x": 256,
-                    "y": 288,
+                    "x": 250,
+                    "y": 250,
                     "IsDnD": false,
                     "colour": {
                         "Value": 4294967295
@@ -56,8 +56,8 @@
                     "name_with_no_file_rename": "inst_3DA83523",
                     "objId": "54dee720-bff4-41cb-b969-d35542ad6c0d",
                     "rotation": 0,
-                    "scaleX": 1,
-                    "scaleY": 1
+                    "scaleX": 2,
+                    "scaleY": 2
                 }
             ]
         },
@@ -114,8 +114,8 @@
         "id": "d39ead3c-774e-4ea2-93ec-655d7c2f6649",
         "modelName": "GMRoomSettings",
         "mvc": "1.0",
-        "Height": 768,
-        "Width": 1024,
+        "Height": 500,
+        "Width": 500,
         "inheritRoomSettings": false,
         "persistent": false
     },
@@ -136,14 +136,14 @@
             "hborder": 32,
             "hport": 768,
             "hspeed": -1,
-            "hview": 768,
+            "hview": 500,
             "inherit": false,
             "objId": "00000000-0000-0000-0000-000000000000",
             "vborder": 32,
             "visible": false,
             "vspeed": -1,
             "wport": 1024,
-            "wview": 1024,
+            "wview": 500,
             "xport": 0,
             "xview": 0,
             "yport": 0,

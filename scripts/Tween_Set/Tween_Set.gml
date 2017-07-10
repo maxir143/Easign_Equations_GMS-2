@@ -6,23 +6,24 @@
 /// @arg Type
 /// @arg State 
 
-value	= argument0 //Attribute
-b		= argument1	//StartValue
-c		= argument2 - argument1	//change in value 
-d		= argument3 * room_speed //Time 
-Type	= argument4	//Type
-State	= argument5	//State
-t		= 0			//current time	
+var Id		= argument0 
+value[Id] 	= argument1 //Attribute
+b[Id] 		= argument2	//StartValue
+c[Id] 		= argument3 - argument2	//change in value 
+d[Id] 		= argument4 * room_speed //Time 
+Type[Id] 	= argument5	//Type
+State[Id] 	= argument6	//State
+t[Id] 		= 0			//current time	
 
 //StartTime
-switch State {	
+switch State[Id] {	
 	case "play":
 	case "start":
 	case "stop":
-		t = 0
+		t[Id] = 0
 	break;
 	case "reverse":
 	case "end":
-		t = d
+		t[Id] = d[Id]
 	break;
 }

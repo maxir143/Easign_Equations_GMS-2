@@ -1,9 +1,11 @@
 /// @desc Set an Instance Tween State
 /// @arg Instance
+/// @arg ID
 /// @arg State
 
+var Id = argument1
 if instance_exists(argument0){
-	variable_instance_set(argument0,"State",argument1)
+	argument0.State[Id] = argument2
 }else{
 	show_debug_message("Error: Instance Not Found")
 }
